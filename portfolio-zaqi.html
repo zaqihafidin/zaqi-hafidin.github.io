@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaqi Hafidin - Portofolio Profesional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">ZH.</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6">
+                        <a href="#home" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#tentang" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Tentang</a>
+                        <a href="#keahlian" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Keahlian</a>
+                        <a href="#pengalaman" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Pengalaman</a>
+                        <a href="#pendidikan" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Pendidikan</a>
+                        <a href="#kontak" class="bg-indigo-600 text-white hover:bg-indigo-700 px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-sm">Hubungi Saya</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-1">
+            <a href="#home" class="block text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="#tentang" class="block text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Tentang</a>
+            <a href="#keahlian" class="block text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Keahlian</a>
+            <a href="#pengalaman" class="block text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Pengalaman</a>
+            <a href="#pendidikan" class="block text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Pendidikan</a>
+            <a href="#kontak" class="block bg-indigo-600 text-white text-center px-4 py-2 rounded-lg text-base font-medium shadow-sm mt-4">Hubungi Saya</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden pt-20 pb-24 lg:pt-32 lg:pb-36 bg-gradient-to-b from-indigo-50/50 via-white to-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-100 text-indigo-800 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span> Available for Opportunities
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    Halo, Saya <span class="bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">Zaqi Hafidin</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-indigo-600 font-semibold mb-6">
+                    IT Infrastructure & Systems Specialist
+                </p>
+                <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
+                    Lulusan Teknik Informatika dengan pengalaman solid selama lebih dari 8 tahun dalam mengelola infrastruktur IT, jaringan komputer, server, serta sistem enterprise (ERP). Gemar memecahkan masalah kompleks dan mengoptimalkan sistem operasional bisnis.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#kontak" class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i> Hubungi Saya
+                    </a>
+                    <a href="#pengalaman" class="px-6 py-3 rounded-xl bg-white text-slate-700 border border-slate-200 font-medium hover:bg-slate-50 transition-all shadow-sm flex items-center gap-2">
+                        Lihat Portofolio <i class="fa-solid fa-arrow-down text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Background Shapes -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none opacity-40">
+            <div class="absolute top-12 left-10 w-72 h-72 bg-indigo-300 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-80 h-80 bg-blue-200 rounded-full blur-3xl"></div>
+        </div>
+    </section>
+
+    <!-- Ringkasan / Tentang Saya -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+                <div class="lg:col-span-1 text-center lg:text-left">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Tentang Saya</h2>
+                    <div class="w-16 h-1 bg-indigo-600 mx-auto lg:mx-0 rounded-full"></div>
+                    <div class="mt-8 space-y-4 text-slate-600 text-sm">
+                        <div class="flex items-center justify-center lg:justify-start gap-3">
+                            <i class="fa-solid fa-envelope text-indigo-600 w-5"></i>
+                            <span>zaqihafid@gmail.com</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start gap-3">
+                            <i class="fa-solid fa-phone text-indigo-600 w-5"></i>
+                            <span>+62 81911588075</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start gap-3">
+                            <i class="fa-solid fa-location-dot text-indigo-600 w-5"></i>
+                            <span>Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 space-y-6 text-slate-600 leading-relaxed">
+                    <p class="text-lg font-medium text-slate-800">
+                        "Saya seorang yang mempunyai keinginan keras untuk mengembangkan diri, belajar, dan menggali ilmu."
+                    </p>
+                    <p>
+                        Memiliki ketertarikan tinggi dalam menyelesaikan masalah teknis operasional dan memiliki semangat kerja yang tinggi. Saya adalah tipikal pekerja keras, bertanggung jawab, jujur, serta berorientasi pada detail untuk memastikan seluruh sistem TI perusahaan berjalan 24/7 tanpa kendala.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <h4 class="text-2xl font-bold text-indigo-600">8+ Tahun</h4>
+                            <p class="text-xs text-slate-500 mt-1">Pengalaman Profesional IT</p>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <h4 class="text-2xl font-bold text-indigo-600">3.23</h4>
+                            <p class="text-xs text-slate-500 mt-1">IPK Sarjana Teknik Informatika</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian / Skills -->
+    <section id="keahlian" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Keahlian Teknis</h2>
+                <p class="text-slate-600 mt-2">Kombinasi skill infrastruktur, jaringan, database, dan sistem ERP perusahaan.</p>
+                <div class="w-12 h-1 bg-indigo-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Networking -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 text-xl mb-4">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Networking</h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">Mikrotik</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">Access Point</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">Router Manage</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">Troubleshooting</span>
+                    </div>
+                </div>
+
+                <!-- OS & Systems -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-xl mb-4">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">OS & Server</h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">Windows Server</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">Mac OS</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">Mail Server</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">Backup System</span>
+                    </div>
+                </div>
+
+                <!-- Enterprise / ERP -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 text-xl mb-4">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Enterprise ERP</h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">SAP</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">ProInt ERP</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">AbiPro</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">SQL Server</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Software & Dev -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 text-xl mb-4">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Web & Apps</h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">PHP</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">HTML / CSS</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">WordPress</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">Photoshop</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md">Ms. Office</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Riwayat Karier / Pengalaman -->
+    <section id="pengalaman" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Riwayat Karier</h2>
+                <p class="text-slate-600 mt-2">Perjalanan profesional saya di berbagai industri.</p>
+                <div class="w-12 h-1 bg-indigo-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative border-l border-slate-200 ml-4 md:ml-6 space-y-12">
+                
+                <!-- Pekerjaan 1 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-indigo-600 border-4 border-white shadow-sm group-hover:scale-125 transition-transform"></div>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">Okt 2019 - Saat ini</span>
+                        <span class="text-xs text-slate-400">4 Tahun 8 Bulan+</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">IT Staff</h3>
+                    <p class="text-sm font-semibold text-slate-600 mb-4">PT. MONDE MAHKOTA BISKUIT</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-sm text-slate-600">
+                        <li>Membangun, mengonfigurasi, dan menginstalasi Windows, Mac OS, dan Windows Server terintegrasi ke client.</li>
+                        <li>Melakukan setting Mikrotik, Access Point, dan Manage Router serta menangani troubleshooting jaringan.</li>
+                        <li>Memelihara berkala perangkat hardware/software komputer user, mesin absensi, CCTV, printer, scanner, dan mesin fax.</li>
+                        <li>Melakukan rutin backup data berkala pada komputer client maupun server utama.</li>
+                        <li>Memahami proses bisnis ERP dan mengelola DBMS (SQL Server, MySQL).</li>
+                    </ul>
+                </div>
+
+                <!-- Pekerjaan 2 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white shadow-sm group-hover:bg-indigo-600 group-hover:scale-125 transition-all"></div>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-600">Jul 2017 - Okt 2019</span>
+                        <span class="text-xs text-slate-400">2 Tahun 4 Bulan</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">IT Support Staff</h3>
+                    <p class="text-sm font-semibold text-slate-600 mb-4">PT. Tigermandiri Pratama</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-sm text-slate-600">
+                        <li>Memahami proses bisnis ERP perusahaan mencakup aplikasi ProInt ERP dan Abipro.</li>
+                        <li>Bertanggung jawab penuh atas backup database berkala pada aplikasi ProInt ERP dan Abipro.</li>
+                        <li>Mengonfigurasi dan menangani troubleshooting mail server perusahaan serta infrastruktur jaringan lokal.</li>
+                        <li>Memastikan kesiapan infrastruktur hardware & software aman untuk seluruh kebutuhan user.</li>
+                    </ul>
+                </div>
+
+                <!-- Pekerjaan 3 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white shadow-sm group-hover:bg-indigo-600 group-hover:scale-125 transition-all"></div>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-600">Feb 2017 - Jul 2017</span>
+                        <span class="text-xs text-slate-400">6 Bulan</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">IT Officer</h3>
+                    <p class="text-sm font-semibold text-slate-600 mb-4">PT Bursa Interaktif Gemilang</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-sm text-slate-600">
+                        <li>Maintenance server utama, setting Mail Server (Intranet & Internet), dan backup database berkala.</li>
+                        <li>Memberikan problem solving dan remote desktop support ke kantor cabang luar daerah.</li>
+                        <li>Mengelola purchase request kebutuhan logistik IT, surat jalan, dan pendataan stok aset per departemen.</li>
+                        <li>Koordinasi intensif dengan vendor eksternal jika terjadi isu jaringan luar.</li>
+                    </ul>
+                </div>
+
+                <!-- Pekerjaan 4 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white shadow-sm group-hover:bg-indigo-600 group-hover:scale-125 transition-all"></div>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-600">Okt 2015 - Jan 2017</span>
+                        <span class="text-xs text-slate-400">1 Tahun 4 Bulan</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Teknisi IT</h3>
+                    <p class="text-sm font-semibold text-slate-600 mb-4">PT. Benzine Indonesia Perkasa</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-sm text-slate-600">
+                        <li>Melakukan pemasangan mesin SPBU di setiap cabang baru sekaligus maintenance hardware & software internalnya.</li>
+                        <li>Instalasi operating system, konfigurasi jaringan lokal, printer, scanner, dan update berkala antivirus user cabang.</li>
+                        <li>Menyelesaikan isu teknis komputer via remote desktop support ke kantor cabang.</li>
+                    </ul>
+                </div>
+
+                <!-- Pekerjaan 5 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white shadow-sm group-hover:bg-indigo-600 group-hover:scale-125 transition-all"></div>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-600">Feb 2010 - Sep 2015</span>
+                        <span class="text-xs text-slate-400">5 Tahun 8 Bulan</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Mechanical Engineer</h3>
+                    <p class="text-sm font-semibold text-slate-600 mb-4">CV Rejeki Abadi Machinery</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-sm text-slate-600">
+                        <li>Pembuatan kerangka mesin berat traktor pertanian dan mesin diesel.</li>
+                        <li>Melakukan Quality Control (QC) presisi tinggi untuk hasil produksi alat pesanan supplier.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendidikan & Bahasa -->
+    <section id="pendidikan" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Pendidikan Card -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 text-lg">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">Pendidikan</h3>
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold px-2 py-0.5 bg-indigo-50 text-indigo-700 rounded-md">Selesai 2014</span>
+                        <h4 class="text-lg font-bold text-slate-900 mt-2">Sarjana Komputer (S.Kom) - Teknik Informatika</h4>
+                        <p class="text-sm text-slate-600 font-medium">STMIK Tasikmalaya</p>
+                        <div class="mt-4 p-3 bg-slate-50 rounded-lg border border-slate-100 inline-flex items-center gap-2">
+                            <span class="text-xs text-slate-500">IPK Kelulusan:</span>
+                            <span class="text-sm font-bold text-slate-800">3.23 / 4.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bahasa Card -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center text-emerald-600 text-lg">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">Bahasa</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm font-medium text-slate-700 mb-1">
+                                <span>Bahasa Indonesia</span>
+                                <span class="text-xs text-emerald-600 font-semibold">Native / Utama</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-emerald-500 h-full w-full rounded-full"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-medium text-slate-700 mb-1">
+                                <span>English</span>
+                                <span class="text-xs text-slate-500">Profesional / Pasif</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-indigo-400 h-full w-[60%] rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak / Hubungi Saya -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Hubungi Saya</h2>
+                <p class="text-slate-600 mt-2">Mari berdiskusi mengenai proyek infrastruktur IT atau peluang kerja sama.</p>
+                <div class="w-12 h-1 bg-indigo-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+                <!-- Info Kontak Direct -->
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4">
+                        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Kirim Email</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Respon dalam 24 jam kerja</p>
+                            <a href="mailto:zaqihafid@gmail.com" class="text-sm font-semibold text-indigo-600 hover:underline block mt-2">zaqihafid@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4">
+                        <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Telepon / WhatsApp</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Hubungi langsung via seluler</p>
+                            <a href="https://wa.me/6281911588075" target="_blank" class="text-sm font-semibold text-emerald-600 hover:underline block mt-2">+62 81911588075</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulir Kontak (Frontend Only) -->
+                <div class="lg:col-span-3 bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <form onsubmit="alert('Pesan berhasil terkirim! (Ini simulasi frontend)'); return false;" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1.5">Nama Lengkap</label>
+                                <input type="text" required class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-indigo-500 transition-colors" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1.5">Alamat Email</label>
+                                <input type="email" required class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-indigo-500 transition-colors" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1.5">Subjek</label>
+                            <input type="text" required class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Tawaran Pekerjaan / Pertanyaan">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1.5">Pesan Anda</label>
+                            <textarea required rows="4" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-indigo-500 transition-colors resize-none" placeholder="Tulis pesan lengkap Anda di sini..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-2.5 bg-indigo-600 text-white font-medium rounded-lg text-sm hover:bg-indigo-700 shadow-sm transition-colors">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center">
+            <p class="text-sm">&copy; 2026 Zaqi Hafidin. All rights reserved.</p>
+            <p class="text-xs text-slate-500 mt-2 sm:mt-0">Dibuat menggunakan HTML5 & Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu & Interactivity -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        const links = menu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
